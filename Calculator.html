@@ -72,7 +72,10 @@
         document.querySelector('.display').innerText =displaytext;
         ">/</button>
 
-        <button class="calc-button">=</button>
+        <button class="calc-button" onclick="
+        displaytext = eval(displaytext);
+        document.querySelector('.display').innerText =displaytext;
+        ">=</button>
 
         <button class="calc-button" onclick="
         displaytext += '9';
@@ -84,7 +87,10 @@
         document.querySelector('.display').innerText =displaytext;
         ">0</button>
 
-        <button class="calc-button">.</button>
+        <button class="calc-button" onclick="
+        displaytext += '.';
+        document.querySelector('.display').innerText =displaytext;
+        ">.</button>
     </div>
 
     <script>
